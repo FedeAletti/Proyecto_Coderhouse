@@ -1,0 +1,431 @@
+@import "colors";
+@import "fonts";
+@import "extends";
+@import "mixins";
+
+$trans-time: all 0.5s;
+$no-display: none;
+
+/* Header */
+
+.header-containerP{
+    background-color: #35CE8D;
+}
+
+div .header-logoP{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+@media only screen and (min-width:600px) {
+    .header-logoP{
+        height: 120px;
+    }
+}
+
+header {
+    text-align: center;
+
+}
+
+nav{
+    background-color: #44bf8b;
+
+    .navP{
+        color: $links-color;
+        font-family: $font;
+        font-weight: bold;
+        &:hover{
+            background-color: #359a6f;
+            padding-left: 40px !important;
+            padding-right: 40px !important;
+            border-radius: 20px;
+            transition: $trans-time    
+        }
+    }
+}
+
+/* ========== INCIO ========== */
+
+.banner-inicio{
+    background: url(../images/Banner.png);
+    @extend %banner;
+    background-position: center 49%;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 600px){
+    .banner-inicio{
+        height: 113px;
+    }
+}
+
+.inicio-container1 {
+    /* text-align: center; */
+    padding-left: 5%;
+    background-color: $inicio-color;
+    color: $inicio_text-color;
+
+    h2{
+        @extend %box-titles;
+    }
+
+    h3{
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    p{
+        font-family: $font;
+        font-size: $text-size;
+    }
+
+    .carousel_P{
+        margin-top: 2%;
+    }
+}
+/* Logo en fixed */
+.spotify-logo img {
+    width: 10%;
+    position: fixed;
+    bottom: -35px;
+    right: -27px;
+}
+
+.spotify-logo img:hover{
+    transform: scale(1.2);
+    @include transform;
+    transition: $trans-time;
+}
+
+@media only screen and (max-width: 1350px){
+    .spotify-logo{
+        display: $no-display;
+    }
+}
+/* FIN logo en fixed */
+
+/* ========== FIN INCIO ========== */
+
+/* ========== TENDENCIAS ========== */
+
+#tendencias{
+    background: $tendencia-color;
+}
+
+.banner-tendencias{
+    background: url(../images/TendenciasBanner.jpg);
+    @extend %banner;
+    background-position: center 49%;
+    background-size: cover;
+}
+
+.tendencias-container{
+    h1{
+        color: $tendencia_text-color;
+        @extend %box-titles;
+    }
+    h2{
+        color: $tendencia_text-color;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    p{
+        color: $tendencia_text-color;
+        font-family: $font;
+        font-size: $text-size;
+    }
+
+    .playlist-images{
+        padding-bottom: 2%;
+
+        .playlist_p{
+            border-bottom: 4px solid  #caf8d8;
+            border-radius: 12px 12px 0 0; 
+            overflow: hidden;
+        }
+    }
+
+    .play-text{
+        background-color: #caf8d8;
+        width: 100%;
+        position: relative;
+        bottom: -235px;
+        border-radius: 0 10px 10px 0;
+        padding-left: 2%;
+        font-weight: bold;
+    }
+
+    .play-grad{
+        background-image: linear-gradient(to top, rgba(168, 230, 188, 0.966), transparent);
+        height: 100%;
+        margin-left: -1.25rem;
+        margin-right: -1.25rem;
+        overflow: hidden;
+        opacity: 0;
+    }
+
+    .to-playlist img{
+        height: 35px;
+        position: absolute;
+        top: 25px;
+        right: 10px;
+    }
+
+    .to-play_mobile{
+        position: absolute;
+        top: 25px;
+        right: 10px;
+        visibility: hidden;
+    }
+    
+    .embed-container{
+        @extend %spotify-responsive-1;
+    }
+    .embed-container iframe, 
+    .embed-container object, 
+    .embed-container embed {
+        @extend %spotify-responsive-2;
+    }
+
+    .playlists-tendencias{
+        @extend %box-playlist;
+    }
+
+    .playlists-tendencias .embed-container{
+        padding-bottom: 90%;
+    }
+
+    .descriptionP .embed-container {
+        padding-bottom: 75%;
+        margin-bottom: 10%;
+    }
+}
+
+/* ========== Medias queries | tendencias ==========*/
+
+@media only screen and (max-width: 979px){
+    .tendencias-container{
+        .to-play_mobile{
+            visibility: visible;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .tendencias-container{
+        .play-text{
+            left: -20px;
+            bottom: -215px; 
+        }
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:979px){
+    
+    .tendencias-container {
+        .play-text{
+            bottom: -105px;
+            left: -20px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 980px) {
+    .play-text{
+        transition: all 500ms ease-out;
+        margin-left: -300px;
+        height: 15%;
+        display: flex;
+        align-items: center;
+    }
+
+    .playlist_p{
+        &:hover{
+            > .play-text {
+                margin-left: -1.25rem;
+            }         
+        }
+        &:hover{
+            > .play-grad{
+                transition: all 500ms ease-out;
+                opacity: 1;
+                visibility: visible;
+            } 
+        }
+        &:hover{ 
+            > img{
+                filter: blur(2px);
+                }
+        } 
+        }
+}   
+
+@media only screen and (max-width: 992px){
+    .playlists-tendencias{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media only screen and (max-width: 980px){
+    .descriptionP .embed-container{
+        padding-bottom: 75%;
+        margin-bottom: 10%;
+    }
+}
+
+@media only screen and (min-width: 981px) and (max-width: 1199px){
+    .descriptionP .embed-container{
+        padding-bottom: 85%;
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (max-width: 993px){
+
+    .exitosP{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    
+    .playlists-tendencias{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    
+    .playlist-iframeP div iframe {
+        padding-bottom: 3%;
+    }
+
+}
+
+/* ========== FIN TENDENCIAS ========== */
+
+
+/* ========== ARTISTAS ========== */
+#artistas{
+    background-color: $artista-color;
+    padding-bottom: 7px;
+}
+
+.banner-artistas {
+    background: url(../images/artistasBanner.jpg);
+    background-position: center 49%;
+    background-size: cover;
+    @extend %banner;
+}
+
+h1{
+    @extend %box-titles;
+    color: $artista_text-color;
+}
+
+/* ==== Artistas ==== */
+
+.artista1P{
+    @extend %box-artista;
+
+    img{
+        width: 100%;
+    }
+
+    p{
+        text-align: initial;
+    }
+}
+
+.artista2P {
+    @extend %box-artista;
+
+    p{
+        text-align: initial;
+    }
+}
+
+.card_P{
+    background-color: $artista_card-color;
+}
+
+.accordionP{
+    width: 100%;
+
+    .card .card-header a    {
+        text-decoration: none;
+        color: $links-color;
+    }
+
+    button a {
+        text-decoration: none;
+        color: white;
+    }
+
+    @extend %buttons-accordion;
+}
+
+/* ========== FIN ARTISTAS ========== */
+
+/* ========== BANDAS ========== */
+
+#bandas{
+    background-color: $bandas-color;
+    padding-bottom: 2%;
+}
+
+.banner-bandasP{
+    background: url(../images/bandas-banner.png);
+    background-position: center 42%;
+    background-size: cover;
+    @extend %banner;
+}
+
+.bandas-containerP{
+    h1{
+        @extend %box-titles;
+        color: $bandas_text-color;
+    }
+
+    @extend %bandas-card;
+}
+
+.bandas-accordionP a{
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: none;
+    color: $links-color;
+}
+
+/* ========== FIN BANDAS ========== */
+
+/* ========== CONTACTO ========== */
+
+@media only screen and (max-width: 500px){
+
+    .contactoP{
+        font-size: 2.5rem;
+    }
+    
+}
+
+/* ========== FIN CONTACTO ========== */
+/* ========== FOOTER ========== */
+
+footer{
+    background-color: black;
+}
+
+.CopyrightP{
+    color: white;
+}
+
+.copyrightP a{
+    color: white;
+}
+
+/* ========== FOOTER ========== */

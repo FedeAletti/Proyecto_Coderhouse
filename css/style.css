@@ -1,0 +1,411 @@
+.bandas-containerP h1, h1, .tendencias-container h1, .inicio-container1 h2 {
+  padding: 40px 40px 40px 20px;
+}
+
+.banner-bandasP, .banner-artistas, .banner-tendencias, .banner-inicio {
+  height: 226px;
+  width: 100%;
+  border-bottom: 4px solid white;
+}
+
+.tendencias-container .embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.tendencias-container .embed-container iframe,
+.tendencias-container .embed-container object,
+.tendencias-container .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.tendencias-container .playlists-tendencias {
+  margin: auto;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, #003a2d, #caf8d8);
+  padding-top: 3%;
+}
+
+.artista2P, .artista1P {
+  margin-top: 4%;
+  text-align: center;
+}
+.artista2P h1, .artista1P h1 {
+  text-align: initial;
+}
+
+.accordionP .button-spotifyP:hover {
+  background-color: #00e461;
+  border: #00e461;
+}
+.accordionP .button-instagramP:hover {
+  background-color: #125688;
+  border: #125688;
+}
+.accordionP .button-youtubeP:hover {
+  background-color: #bb0000;
+  border: #bb0000;
+}
+
+.bandas-containerP .bandasP {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.bandas-containerP .bandasP .card img {
+  margin: 0 auto;
+  width: 85%;
+}
+.bandas-containerP .bandasP .card h3 {
+  text-align: center;
+}
+.bandas-containerP .bandas-textP {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  text-align: left;
+}
+.bandas-containerP .bandas-textP button a {
+  color: white;
+  text-decoration: none;
+}
+.bandas-containerP .bandas-textP button:hover {
+  background-color: #00e461;
+  border: #00e461;
+}
+
+/* Header */
+.header-containerP {
+  background-color: #35CE8D;
+}
+
+div .header-logoP {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+  .header-logoP {
+    height: 120px;
+  }
+}
+header {
+  text-align: center;
+}
+
+nav {
+  background-color: #44bf8b;
+}
+nav .navP {
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+nav .navP:hover {
+  background-color: #359a6f;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+  border-radius: 20px;
+  transition: all 0.5s;
+}
+
+/* ========== INCIO ========== */
+.banner-inicio {
+  background: url(../images/Banner.png);
+  background-position: center 49%;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  .banner-inicio {
+    height: 113px;
+  }
+}
+.inicio-container1 {
+  /* text-align: center; */
+  padding-left: 5%;
+  background-color: #18181d;
+  color: #eae6ca;
+}
+.inicio-container1 h3 {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+.inicio-container1 p {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+.inicio-container1 .carousel_P {
+  margin-top: 2%;
+}
+
+/* Logo en fixed */
+.spotify-logo img {
+  width: 10%;
+  position: fixed;
+  bottom: -35px;
+  right: -27px;
+}
+
+.spotify-logo img:hover {
+  transform: scale(1.2);
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+  transition: all 0.5s;
+}
+
+@media only screen and (max-width: 1350px) {
+  .spotify-logo {
+    display: none;
+  }
+}
+/* FIN logo en fixed */
+/* ========== FIN INCIO ========== */
+/* ========== TENDENCIAS ========== */
+#tendencias {
+  background: #caf8d8;
+}
+
+.banner-tendencias {
+  background: url(../images/TendenciasBanner.jpg);
+  background-position: center 49%;
+  background-size: cover;
+}
+
+.tendencias-container h1 {
+  color: #003a2d;
+}
+.tendencias-container h2 {
+  color: #003a2d;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.tendencias-container p {
+  color: #003a2d;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+.tendencias-container .playlist-images {
+  padding-bottom: 2%;
+}
+.tendencias-container .playlist-images .playlist_p {
+  border-bottom: 4px solid #caf8d8;
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+}
+.tendencias-container .play-text {
+  background-color: #caf8d8;
+  width: 100%;
+  position: relative;
+  bottom: -235px;
+  border-radius: 0 10px 10px 0;
+  padding-left: 2%;
+  font-weight: bold;
+}
+.tendencias-container .play-grad {
+  background-image: linear-gradient(to top, rgba(168, 230, 188, 0.966), transparent);
+  height: 100%;
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
+  overflow: hidden;
+  opacity: 0;
+}
+.tendencias-container .to-playlist img {
+  height: 35px;
+  position: absolute;
+  top: 25px;
+  right: 10px;
+}
+.tendencias-container .to-play_mobile {
+  position: absolute;
+  top: 25px;
+  right: 10px;
+  visibility: hidden;
+}
+.tendencias-container .playlists-tendencias .embed-container {
+  padding-bottom: 90%;
+}
+.tendencias-container .descriptionP .embed-container {
+  padding-bottom: 75%;
+  margin-bottom: 10%;
+}
+
+/* ========== Medias queries | tendencias ==========*/
+@media only screen and (max-width: 979px) {
+  .tendencias-container .to-play_mobile {
+    visibility: visible;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .tendencias-container .play-text {
+    left: -20px;
+    bottom: -215px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .tendencias-container .play-text {
+    bottom: -105px;
+    left: -20px;
+  }
+}
+@media only screen and (min-width: 980px) {
+  .play-text {
+    transition: all 500ms ease-out;
+    margin-left: -300px;
+    height: 15%;
+    display: flex;
+    align-items: center;
+  }
+
+  .playlist_p:hover > .play-text {
+    margin-left: -1.25rem;
+  }
+  .playlist_p:hover > .play-grad {
+    transition: all 500ms ease-out;
+    opacity: 1;
+    visibility: visible;
+  }
+  .playlist_p:hover > img {
+    filter: blur(2px);
+  }
+}
+@media only screen and (max-width: 992px) {
+  .playlists-tendencias {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .descriptionP .embed-container {
+    padding-bottom: 75%;
+    margin-bottom: 10%;
+  }
+}
+@media only screen and (min-width: 981px) and (max-width: 1199px) {
+  .descriptionP .embed-container {
+    padding-bottom: 85%;
+    margin-top: 5%;
+  }
+}
+@media only screen and (max-width: 993px) {
+  .exitosP {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .playlists-tendencias {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .playlist-iframeP div iframe {
+    padding-bottom: 3%;
+  }
+}
+/* ========== FIN TENDENCIAS ========== */
+/* ========== ARTISTAS ========== */
+#artistas {
+  background-color: #fcdfcd;
+  padding-bottom: 7px;
+}
+
+.banner-artistas {
+  background: url(../images/artistasBanner.jpg);
+  background-position: center 49%;
+  background-size: cover;
+}
+
+h1 {
+  color: #224e5a;
+}
+
+/* ==== Artistas ==== */
+.artista1P img {
+  width: 100%;
+}
+.artista1P p {
+  text-align: initial;
+}
+
+.artista2P p {
+  text-align: initial;
+}
+
+.card_P {
+  background-color: #f9bd98;
+}
+
+.accordionP {
+  width: 100%;
+}
+.accordionP .card .card-header a {
+  text-decoration: none;
+  color: black;
+}
+.accordionP button a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ========== FIN ARTISTAS ========== */
+/* ========== BANDAS ========== */
+#bandas {
+  background-color: #e3e1dc;
+  padding-bottom: 2%;
+}
+
+.banner-bandasP {
+  background: url(../images/bandas-banner.png);
+  background-position: center 42%;
+  background-size: cover;
+}
+
+.bandas-containerP h1 {
+  color: #224e5a;
+}
+
+.bandas-accordionP a {
+  text-align: center;
+  margin: 0 auto;
+  text-decoration: none;
+  color: black;
+}
+
+/* ========== FIN BANDAS ========== */
+/* ========== CONTACTO ========== */
+@media only screen and (max-width: 500px) {
+  .contactoP {
+    font-size: 2.5rem;
+  }
+}
+/* ========== FIN CONTACTO ========== */
+/* ========== FOOTER ========== */
+footer {
+  background-color: black;
+}
+
+.CopyrightP {
+  color: white;
+}
+
+.copyrightP a {
+  color: white;
+}
+
+/* ========== FOOTER ========== */
+
+/*# sourceMappingURL=style.css.map */
