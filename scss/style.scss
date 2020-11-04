@@ -93,11 +93,11 @@ nav{
     position: fixed;
     bottom: -35px;
     right: -27px;
+    z-index: 999;
 }
 
 .spotify-logo img:hover{
     transform: scale(1.2);
-    @include transform;
     transition: $trans-time;
 }
 
@@ -322,6 +322,7 @@ nav{
     @extend %banner;
 }
 
+
 h1{
     @extend %box-titles;
     color: $artista_text-color;
@@ -401,6 +402,15 @@ h1{
     color: $links-color;
 }
 
+.img_people-playing{
+    display: flex;
+    justify-content: center;
+
+    img{
+        height: 50vh;
+    }
+}
+
 /* ========== FIN BANDAS ========== */
 
 /* ========== CONTACTO ========== */
@@ -411,6 +421,14 @@ h1{
         font-size: 2.5rem;
     }
     
+}
+
+@media only screen and (max-width: 768px){
+
+    .saxo-contacto{
+        display: none;
+    }
+
 }
 
 /* ========== FIN CONTACTO ========== */

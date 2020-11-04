@@ -24,7 +24,7 @@
         <a href="index.html"><img class="header-logoP" src="images/logo.svg" alt="SpotiList logo"></a>
     </div>
 
-        <header class="sticky-top">
+        <header class="sticky-top shadow ">
 
             <nav class="navbar navbar-expand-lg navbar-light  nav-containerP">
                 
@@ -51,7 +51,7 @@
     <!-- ========== INCIO ==========  -->
     <section id="inicio">
 
-        <div class="banner-inicio"></div>
+        <div class="shadow banner-inicio"></div>
 
         <div class="container-fluid inicio-container1">
 
@@ -109,7 +109,7 @@
     <!-- ========== TENDENCIAS ==========  -->
     <section id="tendencias">
 
-        <div class="banner-tendencias"></div>
+        <div class="shadow banner-tendencias"></div>
 
         <div class="container tendencias-container">
 
@@ -201,7 +201,7 @@
     <!-- ========== ARTISTAS ==========  -->
     <section id="artistas">
 
-        <div class="banner-artistas"></div>
+        <div class="shadow banner-artistas"></div>
 
         <div class="container">
 
@@ -209,7 +209,7 @@
 
             <div class="row artista1P">
                 <div class="col-md-8">
-                    <div class="jumbotron jumbotron-fluid card_P">
+                    <div class="jumbotron jumbotron-fluid shadow card_P">
     
                         <div class="container artista1P">
                             <img src="images/ChrisMartin.jpg" class="img-fluid" alt="">
@@ -225,7 +225,7 @@
                     Guy Berryman y Will Champion. Es uno de los grupos más relevantes de las décadas de los 2000 y 2010.
                     </p>
 
-                    <div id="accordion" role="tablist" class="accordionP" >
+                    <div id="accordion" role="tablist" class="accordionP shadow " >
                         <div class="card">
                         <div class="card-header" role="tab" id="headingTwo">
                             <h5 class="mb-0">
@@ -261,7 +261,7 @@
             <div class="row">
 
                 <div class="col-md-8">
-                    <div class="jumbotron jumbotron-fluid card_P">
+                    <div class="jumbotron jumbotron-fluid shadow card_P">
     
                         <div class="container artista1P">
                             <img src="images/EdSheeran.jpg" class="img-fluid" alt="">
@@ -286,7 +286,7 @@
                             En 2012 Sheeran ganó los galardones artista revelación británico y solista británico masculino en los Brit Awards.
                         </p> 
                     
-                        <div id="accordion" role="tablist" class="accordionP" >
+                        <div id="accordion" role="tablist" class="accordionP shadow " >
                             <div class="card">
                             <div class="card-header" role="tab" id="headingOne">
                                 <h5 class="mb-0">
@@ -324,7 +324,7 @@
     <!-- ========== BANDAS ==========  -->
     <section id="bandas">
 
-        <div class="banner-bandasP"></div>
+        <div class="shadow banner-bandasP"></div>
         <div class="bandas-containerP">
             <div class="container">
 
@@ -333,7 +333,7 @@
                 <!-- ===== ARTISTA 1 ===== -->
                 <div class="row bandasP">
                     <div class="col-md-8">
-                        <div class="card">
+                        <div class="card shadow ">
                             <div class="card-body"></div>
                             <img src="images/conociendo-rusia.jpg" alt="Card image">
                             <div class="card-body">
@@ -347,7 +347,7 @@
                             Acompañado por Nicolas Btesh (en sintetizadores y coros), Guille Salort (en bateria) 
                             y Fran Azorai (en teclados) lanzó su disco debut en marzo 2018.</p>
 
-                            <button type="button" class="btn btn-dark button-spotifyP"><a href="https://open.spotify.com/artist/79R7PUc6T6j09G8mJzNml2">Mirá su perfil!</a></button>
+                            <button type="button" class="btn btn-dark button-spotifyP shadow "><a href="https://open.spotify.com/artist/79R7PUc6T6j09G8mJzNml2">Mirá su perfil!</a></button>
 
                     </div>
                 </div>
@@ -363,12 +363,12 @@
                             fue editado con libre descarga en noviembre 2014 a través del seloo 
                             Discos del Bosque, grabado en Shubiduwé y con varios músicos invitados.</p>
 
-                            <button type="button" class="btn btn-dark button-spotifyP"><a href="https://open.spotify.com/artist/3WGilHlQrv83h1CbF18BEs">Mirá su perfil!</a></button>
+                            <button type="button" class="btn btn-dark button-spotifyP shadow "><a href="https://open.spotify.com/artist/3WGilHlQrv83h1CbF18BEs">Mirá su perfil!</a></button>
                         
                     </div>
 
                     <div class="col-md-8">
-                        <div class="card">
+                        <div class="card shadow ">
                             <div class="card-body"></div>
                             <img src="images/rayos-laser.png" alt="Card image">
                             <div class="card-body">
@@ -377,7 +377,15 @@
                         </div>
                     </div>
                 </div>
-                
+
+                <!-- ===== SVG diseño ===== -->
+
+                <div class="img_people-playing">
+                    <img src="images/music-playing.svg" class="img-fluid" alt="Gente tocando música">
+                </div>
+
+                <!-- ===== FIN SVG Diseño ===== -->
+
                 <!-- ===== FORM PARA SUMAR BANDA ===== -->
                 <div id="accordion" role="tablist">
                     <div class="card">
@@ -455,6 +463,7 @@
                 </div>
 
                 <!-- ===== FIN FORM PARA SUMAR BANDA ===== -->
+
                 
             </div>
 
@@ -467,49 +476,64 @@
     <!-- ========== CONTACTO ==========  -->
 
     <section id="contacto">
-        <div class="container">
-    
-            <h1 class="display-3 font-weight-bold contactoP">Contactanos!</h1>
+        <div class="container-fluid">
 
-            <form class="text-center border border-light p-5" action="#!">
-        
-                <label>Sobre vos</label>
-                <!-- Nombre -->
-                <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Nombre">
-                <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Apellido">
+            <div class="row">
+                <div class="col-lg-6 saxo-contacto">        
+                    <div class="">
+                        <img src="images/saxo-playing.svg" class="img-fluid" alt="Persona tocando el saxofón">
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h1 class="display-3 font-weight-bold contactoP">Contactanos!</h1>
+
+                    <form class="text-center border border-light p-5" action="#!">
+                
+                        <label>Sobre vos</label>
+                        <!-- Nombre -->
+                        <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Nombre">
+                        <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Apellido">
+                    
+                        <!-- Email -->
+                        <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
             
-                <!-- Email -->
-                <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+                        <!-- Edad -->
+                        <input type="number" id="defaultContactFormNumber" class="form-control mb-4" placeholder="Edad">
+                    
+                        <!-- Genero -->
+                        <label>Género</label>
+                        <select class="browser-default custom-select mb-4">
+                            <option value="" disabled>Selecciona tu género</option>
+                            <option value="1" selected>Masculino</option>
+                            <option value="2">Femenino</option>
+                            <option value="3">Otro</option>
+                        </select>
+                    
+                        <!-- Mensaje -->
+                        <div class="form-group">
+                            <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Comentarios"></textarea>
+                        </div>
+                    
+                        <!-- Newsletter -->
+                        <div class="custom-control custom-checkbox mb-4">
+                            <input type="checkbox" class="custom-control-input">
+                            <label class="custom-control-label">Deseas recibir el Newsletter?</label>
+                        </div>
+                    
+                        <!-- Boton para enviar   -->
+                        <button class="btn btn-info btn-block" type="submit">Enviar</button>
+                    
+                    </form>
+                </div>
+            </div>
     
-                <!-- Edad -->
-                <input type="number" id="defaultContactFormNumber" class="form-control mb-4" placeholder="Edad">
             
-                <!-- Genero -->
-                <label>Género</label>
-                <select class="browser-default custom-select mb-4">
-                    <option value="" disabled>Selecciona tu género</option>
-                    <option value="1" selected>Masculino</option>
-                    <option value="2">Femenino</option>
-                    <option value="3">Otro</option>
-                </select>
-            
-                <!-- Mensaje -->
-                <div class="form-group">
-                    <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Comentarios"></textarea>
-                </div>
-            
-                <!-- Newsletter -->
-                <div class="custom-control custom-checkbox mb-4">
-                    <input type="checkbox" class="custom-control-input">
-                    <label class="custom-control-label">Deseas recibir el Newsletter?</label>
-                </div>
-            
-                <!-- Boton para enviar   -->
-                <button class="btn btn-info btn-block" type="submit">Enviar</button>
-            
-            </form>
     
         </div>
+
+
+
     </section>
 
     <!-- ========== FIN CONTACTO ==========  -->
