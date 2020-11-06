@@ -10,6 +10,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- CSS Custom -->
     <link rel="stylesheet" href="css/style.css">
 
     <title>Una playlist para cada momento y lugar</title>
@@ -21,7 +25,8 @@
     <!-- ========== HEADER ==========  -->
     
     <div class="container-fluid header-containerP">
-        <a href="index.html"><img class="header-logoP" src="images/logo.svg" alt="SpotiList logo"></a>
+        <!-- <a href="index.html"><img class="header-logoP" src="images/logo.svg" alt="SpotiList logo"></a> -->
+        <img class="img-fluid header-logoP animate__animated animate__fadeInUp" src="images/logo.png" alt="SpotiList logo">
     </div>
 
         <header class="sticky-top shadow ">
@@ -34,7 +39,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <div class="navbar-nav container">
-                    <a class="nav-item nav-link navP" href="#incio">Inicio</a>
+                    <a class="nav-item nav-link navP" href="#inicio">Inicio</a>
                     <a class="nav-item nav-link navP"  href="#tendencias" target="_self">Tendencia</a>
                     <a class="nav-item nav-link navP"  href="#artistas" target="_self">Artistas</a>
                     <a class="nav-item nav-link navP"  href="#bandas" target="_self">Bandas</a>
@@ -57,7 +62,7 @@
 
             <div class="row d-flex justify-content-start">
                 <div class="col-md-6">
-                    <h2 class="display-4 font-weight-bold">Comparte y conoce estilos musicales con nosotros!</h2>
+                    <h2 class="display-4 font-weight-bold wow animate__animated animate__fadeInDown">Comparte y conoce estilos musicales con nosotros!</h2>
                     <p>
                         Nuestro objetivo es que encuentres playlists de otros usuarios, de acuerdo al <strong>género</strong> que te guste,
                         <strong>lugar</strong> en el que te encuentres, o el <strong>estado de ánimo</strong> que tengas.
@@ -89,7 +94,7 @@
         
             <div class="row d-flex justify-content-center">
                 <div class="col-md-12">
-                    <h3>
+                    <h3 class="wow animate__animated animate__fadeInDown">
                         Inicia sesión en Spotify para comenzar a disfrutar las playlist creadas para cada momento
                         y lugar
                     </h3>   
@@ -98,9 +103,11 @@
 
         </div>            
 
-        <div class="spotify-logo">
-            <a href="https://open.spotify.com/" target="_blank"> <img src="images/spotify-logo.svg" width="300"
-                alt="Spotify-Logo"></a>
+        <div class="spotify-logo ">
+            <a href="https://open.spotify.com/" target="_blank"> 
+                <img class="animate__animated animate__fadeInRight" src="images/spotify-logo.svg" width="300"
+                alt="Spotify-Logo">
+            </a>
         </div>
         
     </section>
@@ -113,14 +120,14 @@
 
         <div class="container tendencias-container">
 
-            <h1 class="display-4 font-weight-bold">Descubrí las tendencias y conocé nuevos estilos</h1>
+            <h1 class="display-4 font-weight-bold wow animate__animated animate__fadeInDown">Descubrí las tendencias y conocé nuevos estilos</h1>
 
             <div class="container playlist-images">
             <div class="row">
                 <div class="col-md-4">
-                <div class="card playlist_p play-1 shadow">
+                <div class="card playlist_p play-1 shadow wow animate__animated animate__fadeInDown">
                     <img class="card-img img-fluid" src="images/house.jpg" alt="DJ de música House">
-                    <div class="card-img-overlay playlist_p">
+                    <div class="card-img-overlay  playlist_p">
                     <p class="card-text shadow play-text">House Music with Good Company</p>
                     <div class="play-grad">
                         <div class="shadow to-playlist">
@@ -135,7 +142,7 @@
                 </div>
         
                 <div class="col-md-4">
-                <div class="card  play-2 shadow">
+                <div class="card play-2 wow shadow animate__animated animate__fadeInDown">
                     <img class="card-img img-fluid" src="images/music_up.jpg" alt="Mural sobre música Pop">
                     <div class="card-img-overlay playlist_p">
                         <p class="card-text shadow play-text">Music Up</p>
@@ -152,7 +159,7 @@
                 </div>
         
                 <div class="col-md-4">
-                <div class="card playlist_p play-3 shadow">
+                <div class="card wow animate__animated animate__fadeInDown playlist_p play-3 shadow">
                     <img class="card-img img-fluid" src="images/canta_auto.jpg" alt="Música en un auto">
                     <div class="card-img-overlay playlist_p"> 
                         <p class="card-text shadow play-text">Canta en el Auto</p>
@@ -174,7 +181,7 @@
 
             <div class="row exitosP">
                     <div class="col-md-6">
-                        <div class="descriptionP">
+                        <div class="wow animate__animated animate__fadeInLeft descriptionP">
                             <h2 class="font-weight-bold">¿Qué música se escucha en cada país? Spotify te lo dice</h2>
                             <p>No hace falta irse a un país para estudiar su historia y su idioma. Lo mismo ocurre con la música. 
                                 <strong>En Spotify puedes encontrarte de todo,</strong> tanto es así que hay una lista de cada país del mundo con sus éxitos. 
@@ -184,7 +191,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="descriptionP">
+                        <div class=" wow animate__animated animate__slideInRight descriptionP">
                             <div class="embed-container ">
                                 <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXbbu94YBG7Ye" width="400" height="380" 
                                 frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
@@ -205,11 +212,11 @@
 
         <div class="container">
 
-            <h1 class="display-5 font-weight-bold">Artistas más escuchados</h1>
+            <h1 class="display-5 font-weight-bold wow animate__animated animate__fadeInDown">Artistas más escuchados</h1>
 
             <div class="row artista1P">
                 <div class="col-md-8">
-                    <div class="jumbotron jumbotron-fluid shadow card_P">
+                    <div class="jumbotron jumbotron-fluid shadow  wow animate__animated animate__fadeInLeft card_P">
     
                         <div class="container artista1P">
                             <img src="images/ChrisMartin.jpg" class="img-fluid" alt="">
@@ -218,7 +225,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 flex-wrap artistas-textP">
+                <div class="col-md-4 flex-wrap wow animate__animated animate__fadeInUp artistas-textP">
                     <p>
                         <strong>Coldplay</strong> es una banda británica de pop rock y rock alternativo 
                     formada en Londres en 1996.6​7​ Está integrada por Chris Martin, Jon Buckland, 
@@ -261,7 +268,7 @@
             <div class="row">
 
                 <div class="col-md-8">
-                    <div class="jumbotron jumbotron-fluid shadow card_P">
+                    <div class="jumbotron jumbotron-fluid shadow wow animate__animated animate__fadeInLeft card_P">
     
                         <div class="container artista1P">
                             <img src="images/EdSheeran.jpg" class="img-fluid" alt="">
@@ -270,7 +277,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 flex-wrap artistas-textP">
+                <div class="col-md-4 flex-wrap wow animate__animated animate__fadeInUp artistas-textP">
                     
                     <p>
                         <strong>Edward Christopher Sheeran</strong>, más conocido como Ed Sheeran, 
@@ -310,7 +317,7 @@
                                 </div>
                             </div>
 
-            </div>
+                </div>
             
             </div>
         
@@ -328,12 +335,12 @@
         <div class="bandas-containerP">
             <div class="container">
 
-                <h1 class="display-4 font-weight-bold">Nuestras bandas amigas</h1>
+                <h1 class="display-4 font-weight-bold wow animate__animated animate__fadeInDown">Nuestras bandas amigas</h1>
 
                 <!-- ===== ARTISTA 1 ===== -->
                 <div class="row bandasP">
                     <div class="col-md-8">
-                        <div class="card shadow ">
+                        <div class="card shadow wow animate__animated animate__fadeInLeft">
                             <div class="card-body"></div>
                             <img src="images/conociendo-rusia.jpg" alt="Card image">
                             <div class="card-body">
@@ -342,7 +349,7 @@
                         </div>
                     </div>
                 
-                    <div class="col-md-4 bandas-textP">
+                    <div class="col-md-4 wow animate__animated animate__fadeInRight bandas-textP">
                         <p> <strong>Conociendo Rusia </strong>es el proyecto solista de Mateo Sujatovich. 
                             Acompañado por Nicolas Btesh (en sintetizadores y coros), Guille Salort (en bateria) 
                             y Fran Azorai (en teclados) lanzó su disco debut en marzo 2018.</p>
@@ -356,7 +363,7 @@
 
                 <!-- ===== ARTISTA 2 ===== -->
                 <div class="row bandasP">
-                    <div class="col-md-4 bandas-textP">
+                    <div class="col-md-4 wow animate__animated animate__fadeInLeft bandas-textP ">
                         <p> Este trío formado en Villa María, Córdoba, lanzó su disco debut a fines de 2011 
                             y logró rápidamente posicionarse dentro de la grilla de los festivales más importantes, como el Pepsi Music, el Personal Fest y el Cosquín Rock."Villa nueva",
                             el segundo disco, 
@@ -368,7 +375,7 @@
                     </div>
 
                     <div class="col-md-8">
-                        <div class="card shadow ">
+                        <div class="card shadow wow animate__animated animate__fadeInRight ">
                             <div class="card-body"></div>
                             <img src="images/rayos-laser.png" alt="Card image">
                             <div class="card-body">
@@ -387,7 +394,7 @@
                 <!-- ===== FIN SVG Diseño ===== -->
 
                 <!-- ===== FORM PARA SUMAR BANDA ===== -->
-                <div id="accordion" role="tablist">
+                <div id="accordion" role="tablist" class="wow animate__animated animate__pulse  ">
                     <div class="card">
                         <div class="card-header" role="tab" id="headingThree">
                         <h5 class="mb-0 bandas-accordionP">
@@ -486,7 +493,7 @@
                 </div>
 
                 <div class="col-lg-6">
-                    <h1 class="display-3 font-weight-bold contactoP">Contactanos!</h1>
+                    <h1 class="display-3 font-weight-bold wow animate__animated animate__fadeInDown contactoP">Contactanos!</h1>
 
                     <form class="text-center border border-light p-5" action="#!">
                 
@@ -540,7 +547,7 @@
 
     <!-- ========== FOOTER ==========  -->
     <footer class="page-footer font-small blue">
-        <div class="footer-copyright text-center py-3 copyrightP">
+        <div class="footer-copyright text-center py-3 wow animate__animated animate__fadeInUp copyrightP">
             <a href="https://github.com/FedeAletti"> Desarrollado por Federico Aletti | Contacto: fedaletti@gmail.com</a>
         </div>    
     </footer>
@@ -575,7 +582,11 @@
 
 
 
-
+    <!-- WOW JS -->
+    <script src="https://wowjs.uk/dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -81,13 +81,17 @@
   border: #00e461;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Header */
 .header-containerP {
   background-color: #35CE8D;
+  text-align: center;
 }
 
-div .header-logoP {
-  width: 100%;
+.header-logoP {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-top: 10px;
@@ -151,12 +155,14 @@ nav .navP:hover {
 }
 
 /* Logo en fixed */
-.spotify-logo img {
+.spotify-logo a img {
   width: 10%;
   position: fixed;
   bottom: -35px;
   right: -27px;
   z-index: 999;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
 }
 
 .spotify-logo img:hover {
@@ -197,6 +203,18 @@ nav .navP:hover {
 }
 .tendencias-container .playlist-images {
   padding-bottom: 2%;
+}
+.tendencias-container .playlist-images .play-1 {
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in;
+}
+.tendencias-container .playlist-images .play-2 {
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in;
+}
+.tendencias-container .playlist-images .play-3 {
+  animation-duration: 0.9s;
+  animation-timing-function: ease-in;
 }
 .tendencias-container .playlist-images .playlist_p {
   border-bottom: 4px solid #caf8d8;
